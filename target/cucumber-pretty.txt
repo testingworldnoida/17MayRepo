@@ -1,0 +1,13 @@
+Feature: Test End to End Items purchase functionality using credit card
+
+  @Regression
+  Scenario: Test Search and Purchase electrnic item and pay using credit card [90m# EndToEndPurchaseUsingDebitCard.feature:3[0m
+    [32mGiven [0m[32mUser is on login page[0m                                               [90m# AutomationActionStep.user_is_on_login_page()[0m
+    [32mWhen [0m[32mUser enters username[0m                                                 [90m# AutomationActionStep.user_enters_username()[0m
+    [32mAnd [0m[32mUser enters password[0m                                                  [90m# AutomationActionStep.user_enters_password()[0m
+    [32mAnd [0m[32mUser clicks on signin button[0m                                          [90m# AutomationActionStep.user_clicks_on_signin_button()[0m
+    [32mThen [0m[32mUser should be logged in[0m                                             [90m# AutomationActionStep.user_should_be_logged_in()[0m
+    [32mAnd [0m[32mUser should get welcome message[0m                                       [90m# AutomationActionStep.user_should_get_welcome_message()[0m
+    [32mWhen [0m[32mUser enters data in search box[0m                                       [90m# AutomationActionStep.user_enters_data_in_search_box()[0m
+    [32mAnd [0m[32mUser clicks on Search button[0m                                          [90m# AutomationActionStep.user_clicks_on_Search_button()[0m
+    [32mThen [0m[32mSearch results should be displayed[0m                                   [90m# AutomationActionStep.search_results_should_be_displayed()[0m

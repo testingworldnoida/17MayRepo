@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.27222">
+<testcase classname="Test End to End Items purchase functionality using credit card" name="Test Search and Purchase electrnic item and pay using credit card" time="3.27222">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+Then User should be logged in...............................................passed
+And User should get welcome message.........................................passed
+When User enters data in search box.........................................passed
+And User clicks on Search button............................................passed
+Then Search results should be displayed.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

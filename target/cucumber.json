@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Test Search and Purchase electrnic item and pay using credit card",
+        "description": "",
+        "id": "test-end-to-end-items-purchase-functionality-using-credit-card;test-search-and-purchase-electrnic-item-and-pay-using-credit-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3272146100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "AutomationActionStep.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username",
+            "match": {
+              "location": "AutomationActionStep.user_enters_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters password",
+            "match": {
+              "location": "AutomationActionStep.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "AutomationActionStep.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be logged in",
+            "match": {
+              "location": "AutomationActionStep.user_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should get welcome message",
+            "match": {
+              "location": "AutomationActionStep.user_should_get_welcome_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters data in search box",
+            "match": {
+              "location": "AutomationActionStep.user_enters_data_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on Search button",
+            "match": {
+              "location": "AutomationActionStep.user_clicks_on_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Search results should be displayed",
+            "match": {
+              "location": "AutomationActionStep.search_results_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Test End to End Items purchase functionality using credit card",
+    "description": "",
+    "id": "test-end-to-end-items-purchase-functionality-using-credit-card",
+    "keyword": "Feature",
+    "uri": "EndToEndPurchaseUsingDebitCard.feature"
+  }
+]
