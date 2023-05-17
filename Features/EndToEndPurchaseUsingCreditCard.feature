@@ -14,4 +14,4 @@ Feature: Test End to End Items purchase functionality using credit card
 		When User enters data in search box
 		And User clicks on Search button
 		Then Search results should be displayed
-			 
+			qweqweq
