@@ -1,0 +1,15 @@
+package testing;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class C {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		File f = new File("C:\\Users\\Nitin Tyagi\\Desktop\\task\\LoginTestData.xlsx");
+		FileInputStream fs = new FileInputStream(f);
+		
+	}
+	
+}

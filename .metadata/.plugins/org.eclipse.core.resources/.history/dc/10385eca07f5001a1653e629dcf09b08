@@ -1,0 +1,21 @@
+package testcases;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public interface B {
+
+	public static void main(String[] args) {
+	
+		HashSet arr = new HashSet();
+		arr.add(23);
+		arr.add(23.12);
+		arr.add("Hello");
+		arr.add(23);
+		System.out.println(arr);
+		
+		
+	}
+	
+}

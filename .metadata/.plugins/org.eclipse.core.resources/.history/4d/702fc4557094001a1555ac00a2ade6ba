@@ -1,0 +1,14 @@
+package testing;
+
+import java.io.File;
+import java.util.Properties;
+
+public class PropertyReader {
+	
+	public void fetchPropertyData(){
+		Properties prop = new Properties();
+		File f = File("./ConfigFiles/");
+		prop.load(reader);
+	}
+
+}

@@ -1,0 +1,23 @@
+Feature: This suite will verify search and purchase using Debit card
+
+Background:
+	Given  User is on login page
+    When   User enters username
+
+Scenario: Verify search and purchase using valid VISA debit card
+When   User enters password 
+And    User clicks on signin button
+Then   User should be on home page
+And    User should get welcome message
+When   User enters search data
+And    USer clicks on search button
+Then   User should get search result
+
+Scenario: Verify search and purchase using valid VISA debit card
+When   User enters password
+And    User clicks on signin button
+Then   User should be on home page
+And    User should get welcome message
+When   User enters search data
+And    USer clicks on search button
+Then   User should get search result

@@ -1,0 +1,3 @@
+Feature: This suite will verify search and purchase using Debit card
+
+Scenario: Verify search and purchase using valid VISA debit card

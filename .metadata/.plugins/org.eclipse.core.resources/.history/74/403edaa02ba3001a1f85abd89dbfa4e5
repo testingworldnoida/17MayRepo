@@ -1,0 +1,36 @@
+package testing;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class C {
+
+	public static void main(String[] args) throws IOException {
+		File f = new File("C:\\Users\\Nitin Tyagi\\Desktop\\task\\LoginTestData.xlsx");
+		FileInputStream fs = new FileInputStream(f);
+		
+		XSSFWorkbook wk  = new XSSFWorkbook(fs);
+		XSSFSheet s1 = wk.getSheet("Login");
+	    int r = s1.getPhysicalNumberOfRows();
+	    for(int i=0;i<r;i++){
+			XSSFRow r1 = s1.getRow(i);
+			int c = r1.getPhysicalNumberOfCells();
+			for(int j=0;j<c;j++){
+				XSSFCell c1 = r1.getCell(j);
+				System.out.println(c1.getStringCellValue());
+			}
+				
+	    }
+		
+	XSSFCell c1 = r1.getCell(1);
+		System.out.println(c1.getStringCellValue());
+	}
+	
+}

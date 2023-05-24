@@ -1,0 +1,12 @@
+package filehanding;
+
+import java.io.IOException;
+
+public class B {
+
+	public static void main(String[] args) throws IOException {
+		ReadDataFromFile r = new ReadDataFromFile();
+		r.writeData("This is new data");
+	}
+	
+}

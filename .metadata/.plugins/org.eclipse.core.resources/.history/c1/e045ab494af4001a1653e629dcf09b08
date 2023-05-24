@@ -1,0 +1,10 @@
+package testcases;
+
+public class TC_001 {
+
+	@Test
+	public void tc001(){
+		
+	}
+	
+}

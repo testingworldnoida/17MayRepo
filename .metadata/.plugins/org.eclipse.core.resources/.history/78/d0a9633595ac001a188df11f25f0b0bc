@@ -1,0 +1,50 @@
+package org.web.automation.testcases;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.web.automation.assertion.Verification;
+import org.web.automation.base.InitiateDriver;
+import org.web.automation.pages.LoginPage;
+
+public class TC_001 extends InitiateDriver{
+
+	 @Test(dataProvider="dp1")
+	 public void tc001(String a , String b , int c){
+		  LoginPage login = new LoginPage(driver);
+		  login.enterUsername(a);
+		  login.enterPassword(b);
+		  System.out.println(c);
+		  login.clickSignin();
+		  
+	 }
+	 
+	 @DataProvider(name="dp1")
+	 public Object[][] dataGen(){
+		 File f = new File("C:\\Users\\Nitin Tyagi\\Desktop\\task\\LoginTestData.xlsx");
+		 FileInputStream fs = new FileInputStream(f);
+		 XSSFWorkbook wk = new XSSFWorkbook(fs);
+		 XSSFSheet s1 = wk.getSheet("Login");
+		 int r = s1.getPhysicalNumberOfRows();
+		 Object [][] tdata = 
+		 for(int i=0;i<r;i++){
+			 XSSFRow r1 = s1.getRow(i);
+			 XSSFCell un = r1.getCell(0);
+			 XSSFCell ps = r1.getCell(1);
+			 un.getStringCellValue();
+			 ps.getStringCellValue();
+		 }
+		 return tdata;
+	 }
+	
+	
+	
+}

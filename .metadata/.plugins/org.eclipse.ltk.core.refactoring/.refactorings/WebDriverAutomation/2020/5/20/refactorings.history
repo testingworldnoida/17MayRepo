@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TC_001_Registration_User.java&apos; to &apos;WebDriverAutomation/src/org.web.automation.testcases&apos;&#x0D;&#x0A;- Original project: &apos;WebDriverAutomation&apos;&#x0D;&#x0A;- Destination element: &apos;WebDriverAutomation/src/org.web.automation.testcases&apos;&#x0D;&#x0A;- Original element: &apos;org.web.automation.testcases.TC_001_Registration_User.java&apos;" description="Copy compilation unit" destination="/src&lt;org.web.automation.testcases" element1="/src&lt;org.web.automation.testcases{TC_001_Registration_User.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1589080999464" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+package filehanding;
+
+import java.io.File;
+import java.io.FileReader;
+
+public class ReadDataFromFile {
+
+	
+	public void readData(){
+		File f = new File("D://TestData.txt");
+		FileReader fr = new FileReader(f);
+	}
+	
+}

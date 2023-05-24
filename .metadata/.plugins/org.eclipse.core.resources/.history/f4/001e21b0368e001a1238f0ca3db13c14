@@ -1,0 +1,36 @@
+package filehanding;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class ReadDataFromFile {
+
+	
+	public void writeData(String data) throws IOException{
+		File f = new File("D:\\TestData11.txt");
+		FileWriter fw = new FileWriter(f);
+		fw.write(data);
+		fw.flush();
+		fw.close();
+	}
+	
+	public void readData() throws IOException{
+		File f = new File("D://TestData.txt");
+		FileReader fr = new FileReader(f);
+		BufferedReader br = new BufferedReader(fr);
+		
+		String s = br.readLine();
+	
+		while(s!=null){
+			System.out.println(s);
+			s = br.readLine();
+		}
+		
+		
+	}
+	
+}

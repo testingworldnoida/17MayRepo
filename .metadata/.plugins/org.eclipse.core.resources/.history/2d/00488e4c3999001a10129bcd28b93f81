@@ -1,0 +1,31 @@
+package org.web.automation.testcases;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.web.automation.base.InitiateDriver;
+import org.web.automation.library.CaptureScreenshot;
+import org.web.automation.library.PropertyReader;
+import org.web.automation.pages.RegistrationPage;
+import org.web.automation.verification.Verify;
+
+public class TC_001_Registration_Functionality extends InitiateDriver{
+	
+	
+	@Test
+	public void tc001() throws IOException {
+	
+	
+		registration.enterUsername("testing");
+		registration.enterEmailAddress("tesgting@testing.com");
+		registration.selectCountryDropdown("India");
+		registration.clickSigninButton();  // Click on Element
+        CaptureScreenshot.takeScreenshot(driver, "After_Registration_Error");
+	}
+	
+}

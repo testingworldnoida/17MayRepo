@@ -1,0 +1,12 @@
+package testing;
+
+public class B {
+
+	public static void main(String[] args) {
+		
+		PropertyReader p = new PropertyReader();
+		p.fetchPropertyData();
+		
+	}
+	
+}

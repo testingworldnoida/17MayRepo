@@ -1,0 +1,10 @@
+package filehanding;
+
+public class ReadDataFromFile {
+
+	
+	public void readData(){
+		
+	}
+	
+}

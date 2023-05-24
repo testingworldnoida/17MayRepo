@@ -1,0 +1,11 @@
+package testcases;
+
+import java.util.ArrayList;
+
+public class B {
+
+	public void sum(ArrayList<Integer> arr){
+		
+	}
+	
+}

@@ -1,0 +1,10 @@
+package org.web.automation.testcases;
+
+public class TC_001_Registration_User {
+	
+	@Test
+	public void tc_001(){
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package testcases;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public interface B {
+
+	public static void main(String[] args) {
+	
+	
+		
+		
+	}
+	
+}

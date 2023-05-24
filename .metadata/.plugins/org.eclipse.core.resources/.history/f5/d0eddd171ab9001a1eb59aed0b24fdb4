@@ -1,0 +1,39 @@
+package org.web.automation.datagen;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+
+public class ExcelDataGenerator {
+
+	 @DataProvider(name="dp1")
+	 public Object[][] dataGenerator() throws IOException{
+		 File f = new File("C:\\Users\\Nitin Tyagi\\Desktop\\task\\TD11.xlsx");
+		 FileInputStream fs = new FileInputStream(f);
+		 
+		 XSSFWorkbook wk = new XSSFWorkbook(fs);
+		 XSSFSheet s1 = wk.getSheet("Sheet1");
+		 
+		 int r = s1.getPhysicalNumberOfRows();
+		 
+		 Object [][] data = new Object[r][2];
+		 for(int i=0;i<r;i++){
+			 XSSFRow r1 = s1.getRow(i);
+			 XSSFCell cu = r1.getCell(0);
+			 XSSFCell cp =  r1.getCell(1);
+			 data[i][0] =  cu.getStringCellValue();
+			 data[i][1] =  cp.getStringCellValue();
+		 }
+				  
+		return data;
+	 }
+	 
+	
+	
+}
